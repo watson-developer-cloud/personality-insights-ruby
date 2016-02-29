@@ -1,11 +1,11 @@
 ---
 declared-services:
-  personality-insights-service-standard:
+  personality-insights-service:
     label: personality_insights
-    plan: standard
+    plan: tiered
 applications:
 - services:
-  - personality-insights-service-standard
+  - personality-insights-service
   name: personality-insights-ruby
   path: .
   memory: 256M

@@ -18,7 +18,7 @@ Give it a try! Click the button below to fork into IBM DevOps Services and deplo
   ```none
   applications:
   - services:
-    - personality-insights-service-standard
+    - personality-insights-service
     name: <application-name>
     path: .
     memory: 256M
@@ -34,7 +34,7 @@ Give it a try! Click the button below to fork into IBM DevOps Services and deplo
 
 5. Create the Personality Insights service in Bluemix
   ```sh
-  $ cf create-service personality_insights standard personality-insights-service-standard
+  $ cf create-service personality_insights tiered personality-insights-service
   ```
 
 6. Push it live!
